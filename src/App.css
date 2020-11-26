@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+::-webkit-input-placeholder {
+  color: #8e8e8e;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+::-ms-input-placeholder {
+  color: #8e8e8e;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+::placeholder {
+  color: #8e8e8e;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;;
+  background: #fafafa;
+}
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background: var(--white);
+  display: flex;
+  padding: 0 200px;
+  border-bottom: 1px solid #efefef;
+  align-items: center;
+}
+
+.Navbar_first {
+  width: 33.33333333333333%;
+}
+
+.Navbar_logo {
+  margin-top: 6px;
+}
+
+.Navbar_logo img {
+  object-fit: cover;
+  display: block;
+}
+
+.Navbar_middle {
+  width: 33.33333333333333%;
+  display: flex;
+  justify-content: center;
+}
+
+.Navbar_search {
+  position: relative;
+}
+
+.Navbar_input-search {
+  background: #fafafa;
+  border: 1px solid #d2dbdb;
+  padding: 7px 45px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  color: silver;
+}
+
+.Navbar_last {
+  width: 33.33333333333333%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Navbar_last li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.Navbar_icons {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal_container {
+  width: 400px;
+  height: auto;
+  padding: 15px;
+  border-radius: 4px;
+  background: var(--white);
+}
+
+.Modal_group {
+  margin: 7px 0;
+}
+
+.Modal_input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #d2dbdb;
+  outline: none;
+  border-radius: 3px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  color: #ffffff;
+  height: 40px;
+  padding: 0 13px;
+  border-radius: 3px;
+}
+
+.btn-smart {
+  width: 100%;
+  background: #f83a63;
+}
+
+.Modal_group span {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.Container {
+  width: 100%;
+  padding: 0 200px;
+  margin-top: 85px;
+}
+
+.Stories {
+  display: flex;
+  background: var(--white);
+  height: 115px;
+  padding: 15px;
+  width: 65%;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 10px 2;
+}
+
+.Stories_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.Stories_img {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #f83a63;
+  padding: 3px;
+}
+
+.Stories_img span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Stories_img span img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Stories_name {
+  font-size: 11px;
+  margin-top: 4px;
+}
