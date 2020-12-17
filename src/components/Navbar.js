@@ -13,11 +13,13 @@ const Navbar = () => {
         logout()
     }
     const checkUser = () => {
-        return !loader && user ?(
+        return !loader ? !loader && user ?(
             <li>{user.displayName} | <span onClick={userLogout}>logout</span></li>
         ):(
             <li onClick={openForms}>Register/Login</li>
-        )
+        ):(
+            <img style={{height:30, marginTop:'-5px'}} src="/images/loading.gif" alt="loading"/>
+        );
     }
     return (
         <div className="Navbar">
