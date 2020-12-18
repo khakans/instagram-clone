@@ -2,6 +2,7 @@
 
 # Introduction
 
+version 1 available
 project was under development, stay tune!
 
 This is my personal project to cloning instagram web app
